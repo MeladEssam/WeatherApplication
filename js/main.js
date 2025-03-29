@@ -11,7 +11,7 @@ let humidityElement = document.querySelector(".humdity-info .humidity-span");
 let weatherStatusElement = document.querySelector(
   ".weather-status .satus-span"
 );
-console.log(humidityElement);
+
 function isEmpty() {
   if (theIput.value === "") {
     return true; //empty
@@ -54,7 +54,7 @@ async function createAPiRequest(cityName) {
   try {
     let response = await axios(url);
     let responseObject = response.data;
-    console.log(responseObject);
+
     let temp_deg = responseObject.main.temp;
     // let the_country = responseObject.sys.country;
     let the_city = responseObject.name;
