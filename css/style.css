@@ -1,0 +1,56 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* height: 2000px; */
+  /* background-color: #6890af; */
+  background-color: var(--dark-color);
+  background-color: #090f18;
+}
+.app-title h2 {
+  color: var(--yellow-color);
+}
+.my-input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  color: var(--yellow-color);
+}
+.main-btn {
+  background: #ffc107;
+  color: var(--dark-color);
+}
+.main-btn:focus {
+  box-shadow: none;
+}
+.weather-box {
+  background-color: rgb(8 31 42);
+  background-color: rgb(65 97 112);
+  background-color: #0a121d;
+  background-color: #0a121d;
+  box-shadow: 1px 1px 10px #010305;
+}
+.weather-info span {
+  color: #ffeb3b;
+}
+.wind-info svg {
+  color: var(--green-color);
+}
+.wind-info .wind-speed span {
+  color: var(--yellow-color);
+}
+.weather-info .city-name {
+  color: var(--green-color);
+}
+.humdity-info span {
+  color: var(--yellow-color);
+}
+.span-font-size {
+  font-size: 60px;
+}

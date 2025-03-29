@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- my css tyle file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- axios -->
+    <!-- <script src="node_modules/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app py-5">
+      <div class="container">
+        <div class="app-title text-center mt-md-3">
+          <h2 class="fw-bold mb-3 fs-1">Weather App</h2>
+          <p class="text-white-50">
+            some informations about weather in your city
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="input-group mb-5 mt-5">
+              <input
+                type="text"
+                class="my-input form-control"
+                placeholder="Enter Your City"
+              />
+              <button
+                class="btn rounded search-btn main-btn fw-bold px-4 py-2 fs-5"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-8 col-lg-6">
+            <div class="py-5 text-white weather-box text-center rounded">
+              <div class="image mb-3">
+                <img class="img-fluid w-25" src="imgs/sun.png " alt="" />
+              </div>
+              <div class="weather-info">
+                <h4 class="tem-deg">
+                  <span class="fw-bold fs-1 temp-span">22</span>
+                  °C
+                </h4>
+                <h4 class="city-name mb-3 fs-1 fw-bold">Cairo</h4>
+              </div>
+              <div
+                class="wind-info d-flex gap-3 align-items-center justify-content-center mb-3"
+              >
+                <i class="fa-solid fa-wind fs-2"></i>
+                <h4 class="wind-speed">
+                  Window Speed:
+                  <span class="wind-span fw-bold fs-2">7.4</span> km/h
+                </h4>
+              </div>
+              <div class="humdity-info">
+                <h4 class="wind-speed">
+                  Humidity Percentage:
+                  <span class="humidity-span fw-bold fs-2">55</span> %
+                </h4>
+                <h4 class="weather-status px-2 px-md-0">
+                  Weather :
+                  <span class="satus-span fw-bold fs-2"></span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////// -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Boundle Bootstrap--->
+    <script src="js/all.min.js"></script>
+    <!--Font Awesome-->
+    <!-- my script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
